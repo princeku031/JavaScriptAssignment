@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rendom Array Element</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var arr=[];
+var i,j;
+for(i=1;i<15;i++){
+	arr.push(Math.floor(Math.random()*15));
+}
+console.log(arr);
+for(j=0;j<arr.length;j++){
+	if(arr[j]%2==0 && arr[j]!=0){
+		document.write(arr[j]+ " ");
+	}
+}
+
+</script>
+</body>
+</html>
