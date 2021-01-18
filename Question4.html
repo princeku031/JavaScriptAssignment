@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+</head>
+<body>
+
+<form>
+   <input type="text" id='name' name="name">
+   <input type="checkbox" id='check' name="check">
+   <input type="submit" name="btn" onclick="validate()" value="Submit">
+</form>
+
+<script type="text/javascript">
+	function validate(){
+		var name=document.getElementById('name').value;
+		var checkBox=document.getElementById('check').checked;
+		if(name==""){
+			alert("Please fill name field");
+			return false;
+		}
+		if(checkBox==false){
+			alert("Please checked check box");
+			return false;
+		}
+
+	}
+	
+
+
+</script>
+</body>
+</html>
