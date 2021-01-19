@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using ajax</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="demo"></div>
+	<input type="submit" id="btn" value="click !">
+
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $.ajax({
+    	
+    	url: "http://www.example.com/api/get/1", 
+    	success: function(result){
+     	 $(".demo").html(result);
+    }
+});
+  });
+});
+</script>
+</body>
+</html>
